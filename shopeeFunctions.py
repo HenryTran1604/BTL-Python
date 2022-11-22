@@ -13,8 +13,8 @@ import tkinter as tk
 from tkinter import CENTER, Toplevel, ttk
 import webbrowser
 import os
-# link to chromedriver app in your pc
-PATH = r'C:\Program Files (x86)\Chromedriver\chromedriver.exe'
+
+PATH = 'source/Chromedriver/chromedriver.exe'
 
 
 def getPosition(root, window_width, window_height):

@@ -27,7 +27,7 @@ class Window(tk.Tk):
         labelWidth = 800
         labelHeight = 500
         maxsize = (labelWidth, labelHeight)
-        img = Image.open('Img/r.jpg')
+        img = Image.open('source/Img/r.jpg')
         img = img.resize(maxsize)
         bg = ImageTk.PhotoImage(img)
         rootImg = tk.Label(self, image=bg)
@@ -89,7 +89,7 @@ class Window(tk.Tk):
         lbNumberOfPage.place(x=10, y=265)
         eNumberOfPage.place(x=170, y=265)
 
-        imgLogo = ImageTk.PhotoImage(Image.open('Img/logoshopee.png').resize((205, 205)))
+        imgLogo = ImageTk.PhotoImage(Image.open('source/Img/logoshopee.png').resize((205, 205)))
         lbLogo = tk.Label(tab1, image=imgLogo)
 
         lbLogo.place(x=550, y=45)

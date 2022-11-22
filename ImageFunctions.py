@@ -12,7 +12,7 @@ from tkinter import ttk
 from tkinter import filedialog
 from shopeeFunctions import getPosition
 import time
-PATH = r'C:\Program Files (x86)\Chromedriver\chromedriver.exe' #link to chromedriver app in your pc
+PATH = "source/Chromedriver/chromedriver.exe"
 
 def get_url(url):   # get link ảnh vào urls = []
     urls = []
@@ -61,6 +61,7 @@ def get_url(url):   # get link ảnh vào urls = []
                             urls.append(item['src'])
                 return urls     
             except:
+                endProgressBar()
                 messagebox.showerror('Error', 'Có lỗi xảy ra\nVui lòng thử lại')
     return None
 
